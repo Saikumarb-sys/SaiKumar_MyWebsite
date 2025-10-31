@@ -7,35 +7,32 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
-<header>
-  <div class="header-container">
-    <div class="header-left">
-      <img src="logo.png" alt="Saikumar Boddupally Logo" class="logo">
-      <div class="header-text">
-        <h1>Saikumar Boddupally</h1>
-        <p>Algo Trader • Data Analyst • Python Developer</p>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="header-left">
+        <img src="logo.png" alt="Saikumar Boddupally Logo" class="logo">
+        <div class="header-text">
+          <h1>Saikumar Boddupally</h1>
+          <p>Algo Trader • Data Analyst • Python Developer</p>
+        </div>
       </div>
+
+      <!-- Hamburger Icon -->
+      <div class="menu-icon" id="menu-icon">☰</div>
+
+      <nav class="navbar" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Hamburger Icon -->
-    <div class="menu-icon" id="menu-icon">
-      ☰
-    </div>
-
-    <nav class="navbar" id="navbar">
-      <a href="#home">Home</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-
-
-
-  <section class="about fade-in">
+  <!-- About Section -->
+  <section class="about fade-in" id="home">
     <img src="myphoto.png" alt="Saikumar Boddupally" class="profile-img" />
     <div class="about-text">
       <h2>About Me</h2>
@@ -48,7 +45,8 @@
     </div>
   </section>
 
-  <section class="projects fade-in">
+  <!-- Projects Section -->
+  <section class="projects fade-in" id="projects">
     <h2>My YouTube Videos</h2>
     <p>Explore some of my algo trading bot demos and data-driven projects 👇</p>
 
@@ -85,27 +83,20 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Saikumar Boddupally | Built with ❤️ using HTML & CSS</p>
   </footer>
 
-<script>
-  const menuIcon = document.getElementById('menu-icon');
-  const navbar = document.getElementById('navbar');
+  <!-- Script for Hamburger Menu -->
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.getElementById('navbar');
 
-  menuIcon.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-  });
-</script>
-
-  
+    menuIcon.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
-
-
-
-
-
-
-
