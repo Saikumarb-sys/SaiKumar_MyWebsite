@@ -3,102 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saikumar Boddupally | Algo Trader</title>
-  <link href="style.css" rel="stylesheet" />
+  <title>Saikumar Boddupally | Algo Trader & Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container nav-content">
-      <div class="logo-section">
-        <img src="logo.png" alt="Logo" class="logo-img" />
-        <h1 class="logo-text">Saikumar Boddupally</h1>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+  <header class="hero fade-in">
+    <img src="A_logo_for_Saikumar_Boddupally.png" alt="Saikumar Boddupally Logo" class="logo" />
+    <h1>Saikumar Boddupally</h1>
+    <p>Algo Trader • Data Analyst • Python Developer</p>
+  </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container hero-content">
-      <img src="myphoto.jpg" alt="Saikumar Boddupally" class="profile-img" />
-      <h2>Hi, I'm Saikumar Boddupally</h2>
+  <section class="about fade-in">
+    <img src="your_photo.jpg" alt="Saikumar Boddupally" class="profile-img" />
+    <div class="about-text">
+      <h2>About Me</h2>
       <p>
-        I build Python-based trading bots, financial dashboards, and data automation tools to make trading smarter.
-      </p>
-      <a href="#projects" class="btn-primary">View My Projects</a>
-    </div>
-  </section>
-
-  <!-- YouTube Video Section -->
-  <section class="video-section">
-    <div class="container text-center">
-      <h3 class="section-title">My Algo Trading Bot Demo</h3>
-      <div class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-          title="Algo Trading Bot Demo"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h3 class="section-title">Projects</h3>
-      <div class="project-grid">
-        <div class="card">
-          <h4>Algo Trading Bot</h4>
-          <p>Fetches live OHLCV data, calculates indicators, and predicts next close using ML models.</p>
-        </div>
-        <div class="card">
-          <h4>Excel Dashboard</h4>
-          <p>Interactive sales and P&amp;L dashboards built with advanced Excel formulas and VBA.</p>
-        </div>
-        <div class="card">
-          <h4>Power BI Reports</h4>
-          <p>Visual insights from financial and trading data using Power BI.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h3 class="section-title">About Me</h3>
-      <p class="about-text">
-        I'm a finance professional with 4+ years of experience in investment banking. My passion lies in leveraging
-        technology to automate trading and analytics. I work with Python, SQL, Excel VBA, and Power BI to build
-        intelligent financial tools.
+        Hi, I'm <strong>Saikumar Boddupally</strong> — a passionate Algo Trader and Developer. 
+        I build semi-automated trading bots, analyze financial data, and create tools 
+        using Python, Excel VBA, and Power BI. My focus is on applying data-driven logic 
+        to trading strategies and automation.
       </p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container text-center">
-      <h3 class="section-title">Contact</h3>
-      <p>Let's collaborate or discuss ideas — drop me a message at:</p>
-      <a href="mailto:saikumar_boddupally@email.com" class="email-link">saikumar_boddupally@email.com</a>
+  <section class="projects fade-in">
+    <h2>My YouTube Videos</h2>
+    <p>Explore some of my algo trading bot demos and data-driven projects 👇</p>
+
+    <div class="video-grid">
+      <div class="video-card">
+        <iframe 
+          src="https://www.youtube.com/embed/zCmMBkN2LW8" 
+          title="Algo Trading Bot Demo 1" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+        <p>Algo Trading Bot Demo 1</p>
+      </div>
+
+      <div class="video-card">
+        <iframe 
+          src="https://www.youtube.com/embed/GmyKTbgiDuU" 
+          title="Algo Trading Bot Demo 2" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+        <p>Algo Trading Bot Demo 2</p>
+      </div>
+
+      <div class="video-card">
+        <iframe 
+          src="https://www.youtube.com/embed/luqVMvmhjD4" 
+          title="Algo Trading Bot Demo 3" 
+          frameborder="0" 
+          allowfullscreen>
+        </iframe>
+        <p>Algo Trading Bot Demo 3</p>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© <span id="year"></span> Saikumar Boddupally | All Rights Reserved</p>
+  <footer>
+    <p>© 2025 Saikumar Boddupally | Built with ❤️ using HTML & CSS</p>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
