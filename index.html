@@ -8,17 +8,22 @@
 </head>
 <body>
   
-<header class="hero fade-in">
-  <div class="navbar">
+<header>
+  <div class="header-container">
     <div class="header-left">
-      <img src="logo.png" alt="Logo" class="logo" />
+      <img src="logo.png" alt="Saikumar Boddupally Logo" class="logo">
       <div class="header-text">
         <h1>Saikumar Boddupally</h1>
         <p>Algo Trader • Data Analyst • Python Developer</p>
       </div>
     </div>
 
-    <nav class="nav-links">
+    <!-- Hamburger Icon -->
+    <div class="menu-icon" id="menu-icon">
+      ☰
+    </div>
+
+    <nav class="navbar" id="navbar">
       <a href="#home">Home</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -26,6 +31,7 @@
     </nav>
   </div>
 </header>
+
 
 
 
@@ -82,8 +88,21 @@
   <footer>
     <p>© 2025 Saikumar Boddupally | Built with ❤️ using HTML & CSS</p>
   </footer>
+
+<script>
+  const menuIcon = document.getElementById('menu-icon');
+  const navbar = document.getElementById('navbar');
+
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
+</script>
+
+  
+
 </body>
 </html>
+
 
 
 
