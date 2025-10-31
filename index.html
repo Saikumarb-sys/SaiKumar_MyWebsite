@@ -10,7 +10,10 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container nav-content">
-      <h1 class="logo">Saikumar Boddupally | Algo Trader</h1>
+      <div class="logo-section">
+        <img src="logo.png" alt="Logo" class="logo-img" />
+        <h1 class="logo-text">Saikumar Boddupally</h1>
+      </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -23,11 +26,27 @@
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="container hero-content">
+      <img src="myphoto.jpg" alt="Saikumar Boddupally" class="profile-img" />
       <h2>Hi, I'm Saikumar Boddupally</h2>
       <p>
         I build Python-based trading bots, financial dashboards, and data automation tools to make trading smarter.
       </p>
       <a href="#projects" class="btn-primary">View My Projects</a>
+    </div>
+  </section>
+
+  <!-- YouTube Video Section -->
+  <section class="video-section">
+    <div class="container text-center">
+      <h3 class="section-title">My Algo Trading Bot Demo</h3>
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          title="Algo Trading Bot Demo"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
   </section>
 
@@ -53,4 +72,33 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="
+  <section id="about" class="about">
+    <div class="container">
+      <h3 class="section-title">About Me</h3>
+      <p class="about-text">
+        I'm a finance professional with 4+ years of experience in investment banking. My passion lies in leveraging
+        technology to automate trading and analytics. I work with Python, SQL, Excel VBA, and Power BI to build
+        intelligent financial tools.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container text-center">
+      <h3 class="section-title">Contact</h3>
+      <p>Let's collaborate or discuss ideas — drop me a message at:</p>
+      <a href="mailto:saikumar_boddupally@email.com" class="email-link">saikumar_boddupally@email.com</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Saikumar Boddupally | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
