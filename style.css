@@ -201,7 +201,7 @@ header {
 
 .skill-card:hover img {
   transform: scale(1.2);
-  filter: brightness(0) invert(1);
+  
 }
 
 .skill-card:hover {
@@ -336,6 +336,7 @@ footer {
     height: 180px;
   }
 }
+
 
 
 
