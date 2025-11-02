@@ -173,6 +173,45 @@ header {
   color: #fff;
   transform: translateY(-5px);
 }
+
+/* added below for video */
+/* Container for video + grid */
+.skills-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Video styling */
+.skills-video {
+  flex: 1;
+  min-width: 280px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-video video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills grid stays as-is but fits beside video */
+.skills-grid {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+/*added above for video in skill section */
+
+
 /*added separetely*/
 .skill-card {
   background-color: #f1f4f9;
@@ -336,6 +375,7 @@ footer {
     height: 180px;
   }
 }
+
 
 
 
